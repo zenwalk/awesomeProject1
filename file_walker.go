@@ -22,8 +22,6 @@ func main() {
 		}
 
 		newPath := strings.Replace(path, fromPath, toPath, 1)
-		println(newPath)
-
 		_, err = os.Stat(newPath)
 		if os.IsNotExist(err) {
 			println("file not exist.")
