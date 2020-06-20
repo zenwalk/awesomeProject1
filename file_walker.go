@@ -32,7 +32,7 @@ func main() {
 		hash2, _ := checkMd5(newPath)
 
 		if bytes.Compare(hash, hash2) == 0 {
-			log.Println("identical file.")
+			//log.Println("identical file.")
 		} else {
 			log.Fatal("file conflict.")
 		}
