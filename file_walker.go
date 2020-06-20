@@ -10,7 +10,7 @@ import (
 	"strings"
 )
 
-func fileWalk() {
+func main() {
 	fromPath, _ := filepath.Abs(os.Args[1])
 	toPath, _ := filepath.Abs(os.Args[2])
 	filepath.Walk(fromPath, func(path string, info os.FileInfo, err error) error {
