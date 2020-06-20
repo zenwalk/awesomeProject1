@@ -67,7 +67,7 @@ func foo() {
 	<-done
 }
 
-func main() {
+func demo() {
 	type (
 		user struct {
 			name string
